@@ -1,0 +1,115 @@
+# command_name [options] [arguments] [i/o redirections]          --- nodmal call, inf the foreground
+# command_name [options] [arguments] [i/o redirections] &        --- background call (can do something else in the meantime)
+# command_name [parameters] < input_file            --- redirecting input
+# command_name [parameters] > output_file           --- redirecting output(rewrite)
+# command_name [parameters] >> output_file          --- redirecting output(append)
+# command_name [parameters] 2> error_output_file    --- redirecting error output(rewrite)
+# command_name [parameters] 2>> error_output_file   --- redirecting error output(append)
+# 0 - stdin, 1 - stdout, 2 - stderr
+# a>&b redirects a to b (where a and be are file descriptors like the ones mentioned above)
+#       example: 2>&1 redirects stderr to stdout (normal behaviour)
+# ; - chained, independent execution (next command starts executing when current command is done being executed)
+# | - chained, dependent execution (previous command's output is the current command's input) (all commands are executed at the same time but stop to wait for their input)
+# |& - connects both stdout and stderr where | only connects stdout (replaces 2>&1 | )
+# & - unchained, simultaneous execution (all the commands are executed at the same time)
+# && and || - unchained, logical execution (the right command can start if the left command has been executed + some bonus conditions):
+#   1 && 2  ->  if 1 is successful, 2 is executed
+#           ->  if 1 fails, 2 won't be executed
+#   1 || 2  ->  if 1 fails, 2 is executed
+#           ->  if 1 is successful, 2 won't be executed
+# time command_1 | command_2 | command_3 | ... | command_n  - time measures the time it takes for the whole chain of command to finish
+
+
+
+# shell pattern:
+# * - any string (even "")
+# ? - any character (exactly one character)
+# [...] - one of the specified characters in ... (exactly one character)
+#       examples:
+#           [513,2,6,79,48] - will either be 5, 1, 3, 2, 6, 7, 9, 4 or 8 (pls don't use commas)
+#           [a-f] - will either be a, b, c, d, e or f
+#           [0-4h-j] - will either be 0, 1, 2, 3, 4, h, i or j
+# [^...] - will be anything but a character from ...
+# \ - escape dash, will ignore the special meaning behind a char and take it as it is
+
+
+
+# regex pattern:
+# . - any character except newline
+# ^ - the start of a string or line
+# $ - end of a string or line
+
+
+# \< - the start of a word
+# \> - end of a word
+# \d - any digit ([0-9])
+# \D - any non-digit ([^0-9])
+# \s - space, tab or newline
+# \S - opposite of s
+# \w - any digit, letter or underscore ([0-9a-zA-Z])
+# \W - anything but a digit, letter or underscore ([^0-9a-zA-Z])
+
+# * - zero or more occurences of the preceding character or group
+# + - one or more occurences of the preceding character or group
+# ? - zero or one occurence of the preceding character or group
+# {n} - exactly n occurences of the preceding character or group
+# {n,} - at least n occurences of the preceding character or group
+# {n, m} - between n and m occurences of the preceding character or group
+# *?, +?, ??, {n}?, {n,}?, {n, m}? are the non-greedy variants of the quantifiers present above
+#               example: in "abba bba abab bbabbbb', a.*a will match "abba bba abab bba", but a.*?a will match "abba"
+
+# [...] - any character of the set
+# [^...] - any character that's not in the set
+# (...) - matches '...' and captures it (as \1, \2, for later proccesing)
+# (?:...) - matches '...' but does not capture it
+# (aaa|bbb) -either matches 'aaa' or 'bbb'
+#               to use the following 4 checks, you need perl, as in grep -P
+# (?=string) - asserts that what immediately follows the current position is "string"
+# (?<=string) -asserts that what immediately precedes the current position is "string"
+# (?!string) - asserts that what immediately follows the current position is not "string"
+# (?<!string) - asserts that what immediately precedes the current position is not "string"
+
+
+
+# awk stuff:
+# to declare variables: awk -v a=0 -v b=1 ...
+# FS - field separator (set by -F "whatever_you_want")
+# OFS - output field separator (should've seen this coming) (set by )
+# $0 the current input line
+# $1, $2, $3 ... words of $o (separated by FS)
+# NF - number of fields in the input line
+# NR - number of lines that've been processed so far
+# FNR - like NR but it resets with each file processed
+# RS - between-two-lines separator (input only)
+# ORS - between-two-lines separator (output only)
+# you can use awk in the following way:
+# awk ' BEGIN {FS=":", OFS=":"} {print $1, $2} END {print 0}'
+# to compre using Desktop/dif.sh:
+# place the commands you want to compare in dif_input as follows:
+awk -F : '{if ($6 ~ "^/fenrir/studs/"$1) print $0}' so_etc_passwd.txt
+grep studs so_etc_passwd.txt
+# run Desktop/dif.sh
+1:
+cut /etc/passwd -d : -f 7 | sort -u
+2;
+grep /bin/bash so_etc_passwd.txt -c
+grep /bin/bash so_etc_passwd.txt -c -v
+3:
+awk -F : -v number=0 '{if ($6 ~ "^/fenrir/studs/"$1"$") number++} END {print number}' so_etc_passwd.txt # for /fenrir/studs on the 6th field
+awk -F : -v number=0 '{if ($4 ~ "^202$") number++} END {print number}' so_etc_passwd.txt #for 202 on the 4th field
+4:
+cut -d : -f 1 so_etc_passwd.txt | grep ana | grep -v diana -c
+5:
+find . -type f -printf "%p:%s:%T@\n" | sort -t: -k3 -n -r | head -n 3 | sort -r -n -k2 -t:
+6:
+who | cut -d ' ' -f 1 | sort -u > utilizatori-logati.txt
+7:
+who | grep stefan | tr -s ' ' | cut -d ' ' -f 3
+8:
+ps -U stefan -o pid= | wc -l
+9:
+who | cut -d ' ' -f 1 | grep ^a > a.txt
+who | cut -d ' ' -f 1 | grep escu$ > escu.txt
+10:
+awk -F : '{if ($3 > 5000) print $0}' /etc/passwd
+grep -P "^[^:]*:[^:]*:([5-9][0-9]{3}:|[0-9]{5,})" /etc/passwd

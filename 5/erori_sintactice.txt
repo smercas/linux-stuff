@@ -1,0 +1,824 @@
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/911.txt -a -r /home/stefan/Desktop/911.txt -a -x /home/stefan/Desktop/911.txt ']'
++ '[' -f /home/stefan/Desktop/911.txt -a -r /home/stefan/Desktop/911.txt -a -x /home/stefan/Desktop/911.txt ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/922.txt -a -r /home/stefan/Desktop/922.txt -a -x /home/stefan/Desktop/922.txt ']'
++ '[' -f /home/stefan/Desktop/922.txt -a -r /home/stefan/Desktop/922.txt -a -x /home/stefan/Desktop/922.txt ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/compile-copy.sh -a -r /home/stefan/Desktop/compile-copy.sh -a -x /home/stefan/Desktop/compile-copy.sh ']'
++ '[' -f /home/stefan/Desktop/compile-copy.sh -a -r /home/stefan/Desktop/compile-copy.sh -a -x /home/stefan/Desktop/compile-copy.sh ']'
++ [[ /home/stefan/Desktop/compile-copy.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/compile-copy.sh
++ i=
++ '[' -z ']'
++ echo '/home/stefan/Desktop/compile-copy.sh has no for loops'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/compile.sh -a -r /home/stefan/Desktop/compile.sh -a -x /home/stefan/Desktop/compile.sh ']'
++ '[' -f /home/stefan/Desktop/compile.sh -a -r /home/stefan/Desktop/compile.sh -a -x /home/stefan/Desktop/compile.sh ']'
++ [[ /home/stefan/Desktop/compile.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/compile.sh
++ i=
++ '[' -z ']'
++ echo '/home/stefan/Desktop/compile.sh has no for loops'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/diff_calculate -a -r /home/stefan/Desktop/diff_calculate -a -x /home/stefan/Desktop/diff_calculate ']'
++ '[' -L /home/stefan/Desktop/diff_calculate ']'
++ rec /home/stefan/Desktop/diff_calculate
++ set -x
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/diff_calculate/*' -a -r '/home/stefan/Desktop/diff_calculate/*' -a -x '/home/stefan/Desktop/diff_calculate/*' ']'
++ '[' -f '/home/stefan/Desktop/diff_calculate/*' -a -r '/home/stefan/Desktop/diff_calculate/*' -a -x '/home/stefan/Desktop/diff_calculate/*' ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/dif_input -a -r /home/stefan/Desktop/dif_input -a -x /home/stefan/Desktop/dif_input ']'
++ '[' -f /home/stefan/Desktop/dif_input -a -r /home/stefan/Desktop/dif_input -a -x /home/stefan/Desktop/dif_input ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/dif.sh -a -r /home/stefan/Desktop/dif.sh -a -x /home/stefan/Desktop/dif.sh ']'
++ '[' -f /home/stefan/Desktop/dif.sh -a -r /home/stefan/Desktop/dif.sh -a -x /home/stefan/Desktop/dif.sh ']'
++ [[ /home/stefan/Desktop/dif.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/dif.sh
++ i=
++ '[' -z ']'
++ echo '/home/stefan/Desktop/dif.sh has no for loops'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so -a -r /home/stefan/Desktop/lab_so -a -x /home/stefan/Desktop/lab_so ']'
++ '[' -L /home/stefan/Desktop/lab_so ']'
++ rec /home/stefan/Desktop/lab_so
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/1 -a -r /home/stefan/Desktop/lab_so/1 -a -x /home/stefan/Desktop/lab_so/1 ']'
++ '[' -L /home/stefan/Desktop/lab_so/1 ']'
++ rec /home/stefan/Desktop/lab_so/1
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/1/lab -a -r /home/stefan/Desktop/lab_so/1/lab -a -x /home/stefan/Desktop/lab_so/1/lab ']'
++ '[' -f /home/stefan/Desktop/lab_so/1/lab -a -r /home/stefan/Desktop/lab_so/1/lab -a -x /home/stefan/Desktop/lab_so/1/lab ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/1/tema -a -r /home/stefan/Desktop/lab_so/1/tema -a -x /home/stefan/Desktop/lab_so/1/tema ']'
++ '[' -f /home/stefan/Desktop/lab_so/1/tema -a -r /home/stefan/Desktop/lab_so/1/tema -a -x /home/stefan/Desktop/lab_so/1/tema ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/2 -a -r /home/stefan/Desktop/lab_so/2 -a -x /home/stefan/Desktop/lab_so/2 ']'
++ '[' -L /home/stefan/Desktop/lab_so/2 ']'
++ rec /home/stefan/Desktop/lab_so/2
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/2/lab -a -r /home/stefan/Desktop/lab_so/2/lab -a -x /home/stefan/Desktop/lab_so/2/lab ']'
++ '[' -f /home/stefan/Desktop/lab_so/2/lab -a -r /home/stefan/Desktop/lab_so/2/lab -a -x /home/stefan/Desktop/lab_so/2/lab ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/2/tema -a -r /home/stefan/Desktop/lab_so/2/tema -a -x /home/stefan/Desktop/lab_so/2/tema ']'
++ '[' -f /home/stefan/Desktop/lab_so/2/tema -a -r /home/stefan/Desktop/lab_so/2/tema -a -x /home/stefan/Desktop/lab_so/2/tema ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/3 -a -r /home/stefan/Desktop/lab_so/3 -a -x /home/stefan/Desktop/lab_so/3 ']'
++ '[' -L /home/stefan/Desktop/lab_so/3 ']'
++ rec /home/stefan/Desktop/lab_so/3
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/3/lab -a -r /home/stefan/Desktop/lab_so/3/lab -a -x /home/stefan/Desktop/lab_so/3/lab ']'
++ '[' -f /home/stefan/Desktop/lab_so/3/lab -a -r /home/stefan/Desktop/lab_so/3/lab -a -x /home/stefan/Desktop/lab_so/3/lab ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/3/tema -a -r /home/stefan/Desktop/lab_so/3/tema -a -x /home/stefan/Desktop/lab_so/3/tema ']'
++ '[' -f /home/stefan/Desktop/lab_so/3/tema -a -r /home/stefan/Desktop/lab_so/3/tema -a -x /home/stefan/Desktop/lab_so/3/tema ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4 -a -r /home/stefan/Desktop/lab_so/4 -a -x /home/stefan/Desktop/lab_so/4 ']'
++ '[' -L /home/stefan/Desktop/lab_so/4 ']'
++ rec /home/stefan/Desktop/lab_so/4
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/ex1.sh -a -r /home/stefan/Desktop/lab_so/4/ex1.sh -a -x /home/stefan/Desktop/lab_so/4/ex1.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/ex1.sh -a -r /home/stefan/Desktop/lab_so/4/ex1.sh -a -x /home/stefan/Desktop/lab_so/4/ex1.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/lab -a -r /home/stefan/Desktop/lab_so/4/lab -a -x /home/stefan/Desktop/lab_so/4/lab ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/lab -a -r /home/stefan/Desktop/lab_so/4/lab -a -x /home/stefan/Desktop/lab_so/4/lab ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/lab10.sh -a -r /home/stefan/Desktop/lab_so/4/lab10.sh -a -x /home/stefan/Desktop/lab_so/4/lab10.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/lab10.sh -a -r /home/stefan/Desktop/lab_so/4/lab10.sh -a -x /home/stefan/Desktop/lab_so/4/lab10.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/lab1.sh -a -r /home/stefan/Desktop/lab_so/4/lab1.sh -a -x /home/stefan/Desktop/lab_so/4/lab1.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/lab1.sh -a -r /home/stefan/Desktop/lab_so/4/lab1.sh -a -x /home/stefan/Desktop/lab_so/4/lab1.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/lab2.sh -a -r /home/stefan/Desktop/lab_so/4/lab2.sh -a -x /home/stefan/Desktop/lab_so/4/lab2.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/lab2.sh -a -r /home/stefan/Desktop/lab_so/4/lab2.sh -a -x /home/stefan/Desktop/lab_so/4/lab2.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/lab3.sh -a -r /home/stefan/Desktop/lab_so/4/lab3.sh -a -x /home/stefan/Desktop/lab_so/4/lab3.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/lab3.sh -a -r /home/stefan/Desktop/lab_so/4/lab3.sh -a -x /home/stefan/Desktop/lab_so/4/lab3.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/lab4.sh -a -r /home/stefan/Desktop/lab_so/4/lab4.sh -a -x /home/stefan/Desktop/lab_so/4/lab4.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/lab4.sh -a -r /home/stefan/Desktop/lab_so/4/lab4.sh -a -x /home/stefan/Desktop/lab_so/4/lab4.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/lab5.sh -a -r /home/stefan/Desktop/lab_so/4/lab5.sh -a -x /home/stefan/Desktop/lab_so/4/lab5.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/lab5.sh -a -r /home/stefan/Desktop/lab_so/4/lab5.sh -a -x /home/stefan/Desktop/lab_so/4/lab5.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/lab6.sh -a -r /home/stefan/Desktop/lab_so/4/lab6.sh -a -x /home/stefan/Desktop/lab_so/4/lab6.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/lab6.sh -a -r /home/stefan/Desktop/lab_so/4/lab6.sh -a -x /home/stefan/Desktop/lab_so/4/lab6.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/lab7.sh -a -r /home/stefan/Desktop/lab_so/4/lab7.sh -a -x /home/stefan/Desktop/lab_so/4/lab7.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/lab7.sh -a -r /home/stefan/Desktop/lab_so/4/lab7.sh -a -x /home/stefan/Desktop/lab_so/4/lab7.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/lab8.sh -a -r /home/stefan/Desktop/lab_so/4/lab8.sh -a -x /home/stefan/Desktop/lab_so/4/lab8.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/lab8.sh -a -r /home/stefan/Desktop/lab_so/4/lab8.sh -a -x /home/stefan/Desktop/lab_so/4/lab8.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/lab9.sh -a -r /home/stefan/Desktop/lab_so/4/lab9.sh -a -x /home/stefan/Desktop/lab_so/4/lab9.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/lab9.sh -a -r /home/stefan/Desktop/lab_so/4/lab9.sh -a -x /home/stefan/Desktop/lab_so/4/lab9.sh ']'
++ [[ /home/stefan/Desktop/lab_so/4/lab9.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/lab_so/4/lab9.sh
++ i=
++ '[' -z ']'
++ echo '/home/stefan/Desktop/lab_so/4/lab9.sh has no for loops'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/output.txt -a -r /home/stefan/Desktop/lab_so/4/output.txt -a -x /home/stefan/Desktop/lab_so/4/output.txt ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/output.txt -a -r /home/stefan/Desktop/lab_so/4/output.txt -a -x /home/stefan/Desktop/lab_so/4/output.txt ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_a11.sh -a -r /home/stefan/Desktop/lab_so/4/tema_a11.sh -a -x /home/stefan/Desktop/lab_so/4/tema_a11.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_a11.sh -a -r /home/stefan/Desktop/lab_so/4/tema_a11.sh -a -x /home/stefan/Desktop/lab_so/4/tema_a11.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_a12.sh -a -r /home/stefan/Desktop/lab_so/4/tema_a12.sh -a -x /home/stefan/Desktop/lab_so/4/tema_a12.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_a12.sh -a -r /home/stefan/Desktop/lab_so/4/tema_a12.sh -a -x /home/stefan/Desktop/lab_so/4/tema_a12.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_a21.sh -a -r /home/stefan/Desktop/lab_so/4/tema_a21.sh -a -x /home/stefan/Desktop/lab_so/4/tema_a21.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_a21.sh -a -r /home/stefan/Desktop/lab_so/4/tema_a21.sh -a -x /home/stefan/Desktop/lab_so/4/tema_a21.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_a22.sh -a -r /home/stefan/Desktop/lab_so/4/tema_a22.sh -a -x /home/stefan/Desktop/lab_so/4/tema_a22.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_a22.sh -a -r /home/stefan/Desktop/lab_so/4/tema_a22.sh -a -x /home/stefan/Desktop/lab_so/4/tema_a22.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_b1.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b1.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b1.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_b1.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b1.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b1.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_b2.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b2.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b2.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_b2.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b2.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b2.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_b3.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b3.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b3.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_b3.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b3.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b3.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_b4.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b4.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b4.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_b4.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b4.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b4.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_b5.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b5.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b5.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_b5.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b5.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b5.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_b6.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b6.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b6.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_b6.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b6.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b6.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_b7_cache.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b7_cache.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b7_cache.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_b7_cache.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b7_cache.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b7_cache.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_b7.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b7.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b7.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_b7.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b7.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b7.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_b7_trad.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b7_trad.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b7_trad.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_b7_trad.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b7_trad.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b7_trad.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_b8_cache.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b8_cache.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b8_cache.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_b8_cache.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b8_cache.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b8_cache.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_b8.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b8.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b8.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_b8.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b8.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b8.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/4/tema_b8_trad.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b8_trad.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b8_trad.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/4/tema_b8_trad.sh -a -r /home/stefan/Desktop/lab_so/4/tema_b8_trad.sh -a -x /home/stefan/Desktop/lab_so/4/tema_b8_trad.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5 -a -r /home/stefan/Desktop/lab_so/5 -a -x /home/stefan/Desktop/lab_so/5 ']'
++ '[' -L /home/stefan/Desktop/lab_so/5 ']'
++ rec /home/stefan/Desktop/lab_so/5
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/erori_sintactice.txt -a -r /home/stefan/Desktop/lab_so/5/erori_sintactice.txt -a -x /home/stefan/Desktop/lab_so/5/erori_sintactice.txt ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/erori_sintactice.txt -a -r /home/stefan/Desktop/lab_so/5/erori_sintactice.txt -a -x /home/stefan/Desktop/lab_so/5/erori_sintactice.txt ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/lab10.sh -a -r /home/stefan/Desktop/lab_so/5/lab10.sh -a -x /home/stefan/Desktop/lab_so/5/lab10.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/lab10.sh -a -r /home/stefan/Desktop/lab_so/5/lab10.sh -a -x /home/stefan/Desktop/lab_so/5/lab10.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/lab1.sh -a -r /home/stefan/Desktop/lab_so/5/lab1.sh -a -x /home/stefan/Desktop/lab_so/5/lab1.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/lab1.sh -a -r /home/stefan/Desktop/lab_so/5/lab1.sh -a -x /home/stefan/Desktop/lab_so/5/lab1.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/lab2.sh -a -r /home/stefan/Desktop/lab_so/5/lab2.sh -a -x /home/stefan/Desktop/lab_so/5/lab2.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/lab2.sh -a -r /home/stefan/Desktop/lab_so/5/lab2.sh -a -x /home/stefan/Desktop/lab_so/5/lab2.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/lab3.sh -a -r /home/stefan/Desktop/lab_so/5/lab3.sh -a -x /home/stefan/Desktop/lab_so/5/lab3.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/lab3.sh -a -r /home/stefan/Desktop/lab_so/5/lab3.sh -a -x /home/stefan/Desktop/lab_so/5/lab3.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/lab4.sh -a -r /home/stefan/Desktop/lab_so/5/lab4.sh -a -x /home/stefan/Desktop/lab_so/5/lab4.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/lab4.sh -a -r /home/stefan/Desktop/lab_so/5/lab4.sh -a -x /home/stefan/Desktop/lab_so/5/lab4.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/lab5.sh -a -r /home/stefan/Desktop/lab_so/5/lab5.sh -a -x /home/stefan/Desktop/lab_so/5/lab5.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/lab5.sh -a -r /home/stefan/Desktop/lab_so/5/lab5.sh -a -x /home/stefan/Desktop/lab_so/5/lab5.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/lab6.sh -a -r /home/stefan/Desktop/lab_so/5/lab6.sh -a -x /home/stefan/Desktop/lab_so/5/lab6.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/lab6.sh -a -r /home/stefan/Desktop/lab_so/5/lab6.sh -a -x /home/stefan/Desktop/lab_so/5/lab6.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/lab7.sh -a -r /home/stefan/Desktop/lab_so/5/lab7.sh -a -x /home/stefan/Desktop/lab_so/5/lab7.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/lab7.sh -a -r /home/stefan/Desktop/lab_so/5/lab7.sh -a -x /home/stefan/Desktop/lab_so/5/lab7.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/lab8.sh -a -r /home/stefan/Desktop/lab_so/5/lab8.sh -a -x /home/stefan/Desktop/lab_so/5/lab8.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/lab8.sh -a -r /home/stefan/Desktop/lab_so/5/lab8.sh -a -x /home/stefan/Desktop/lab_so/5/lab8.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/lab9.sh -a -r /home/stefan/Desktop/lab_so/5/lab9.sh -a -x /home/stefan/Desktop/lab_so/5/lab9.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/lab9.sh -a -r /home/stefan/Desktop/lab_so/5/lab9.sh -a -x /home/stefan/Desktop/lab_so/5/lab9.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/output.txt -a -r /home/stefan/Desktop/lab_so/5/output.txt -a -x /home/stefan/Desktop/lab_so/5/output.txt ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/output.txt -a -r /home/stefan/Desktop/lab_so/5/output.txt -a -x /home/stefan/Desktop/lab_so/5/output.txt ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/tema_a11.sh -a -r /home/stefan/Desktop/lab_so/5/tema_a11.sh -a -x /home/stefan/Desktop/lab_so/5/tema_a11.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/tema_a11.sh -a -r /home/stefan/Desktop/lab_so/5/tema_a11.sh -a -x /home/stefan/Desktop/lab_so/5/tema_a11.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/5/tema_a12.sh -a -r /home/stefan/Desktop/lab_so/5/tema_a12.sh -a -x /home/stefan/Desktop/lab_so/5/tema_a12.sh ']'
++ '[' -f /home/stefan/Desktop/lab_so/5/tema_a12.sh -a -r /home/stefan/Desktop/lab_so/5/tema_a12.sh -a -x /home/stefan/Desktop/lab_so/5/tema_a12.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/6 -a -r /home/stefan/Desktop/lab_so/6 -a -x /home/stefan/Desktop/lab_so/6 ']'
++ '[' -L /home/stefan/Desktop/lab_so/6 ']'
++ rec /home/stefan/Desktop/lab_so/6
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/6/lab -a -r /home/stefan/Desktop/lab_so/6/lab -a -x /home/stefan/Desktop/lab_so/6/lab ']'
++ '[' -f /home/stefan/Desktop/lab_so/6/lab -a -r /home/stefan/Desktop/lab_so/6/lab -a -x /home/stefan/Desktop/lab_so/6/lab ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/6/lab1.c -a -r /home/stefan/Desktop/lab_so/6/lab1.c -a -x /home/stefan/Desktop/lab_so/6/lab1.c ']'
++ '[' -f /home/stefan/Desktop/lab_so/6/lab1.c -a -r /home/stefan/Desktop/lab_so/6/lab1.c -a -x /home/stefan/Desktop/lab_so/6/lab1.c ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/lab_so/a b ' -a -r '/home/stefan/Desktop/lab_so/a b ' -a -x '/home/stefan/Desktop/lab_so/a b ' ']'
++ '[' -L '/home/stefan/Desktop/lab_so/a b ' ']'
++ rec '/home/stefan/Desktop/lab_so/a b '
++ set -x
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/lab_so/a b /c d .sh' -a -r '/home/stefan/Desktop/lab_so/a b /c d .sh' -a -x '/home/stefan/Desktop/lab_so/a b /c d .sh' ']'
++ '[' -f '/home/stefan/Desktop/lab_so/a b /c d .sh' -a -r '/home/stefan/Desktop/lab_so/a b /c d .sh' -a -x '/home/stefan/Desktop/lab_so/a b /c d .sh' ']'
++ [[ /home/stefan/Desktop/lab_so/a b /c d .sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' '/home/stefan/Desktop/lab_so/a b /c d .sh'
++ i=
++ '[' -z ']'
++ echo '/home/stefan/Desktop/lab_so/a b /c d .sh has no for loops'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/new_c_project -a -r /home/stefan/Desktop/lab_so/new_c_project -a -x /home/stefan/Desktop/lab_so/new_c_project ']'
++ '[' -L /home/stefan/Desktop/lab_so/new_c_project ']'
++ rec /home/stefan/Desktop/lab_so/new_c_project
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/new_c_project/bin -a -r /home/stefan/Desktop/lab_so/new_c_project/bin -a -x /home/stefan/Desktop/lab_so/new_c_project/bin ']'
++ '[' -L /home/stefan/Desktop/lab_so/new_c_project/bin ']'
++ rec /home/stefan/Desktop/lab_so/new_c_project/bin
++ set -x
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/lab_so/new_c_project/bin/*' -a -r '/home/stefan/Desktop/lab_so/new_c_project/bin/*' -a -x '/home/stefan/Desktop/lab_so/new_c_project/bin/*' ']'
++ '[' -f '/home/stefan/Desktop/lab_so/new_c_project/bin/*' -a -r '/home/stefan/Desktop/lab_so/new_c_project/bin/*' -a -x '/home/stefan/Desktop/lab_so/new_c_project/bin/*' ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/new_c_project/Makefile -a -r /home/stefan/Desktop/lab_so/new_c_project/Makefile -a -x /home/stefan/Desktop/lab_so/new_c_project/Makefile ']'
++ '[' -f /home/stefan/Desktop/lab_so/new_c_project/Makefile -a -r /home/stefan/Desktop/lab_so/new_c_project/Makefile -a -x /home/stefan/Desktop/lab_so/new_c_project/Makefile ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/new_c_project/obj -a -r /home/stefan/Desktop/lab_so/new_c_project/obj -a -x /home/stefan/Desktop/lab_so/new_c_project/obj ']'
++ '[' -L /home/stefan/Desktop/lab_so/new_c_project/obj ']'
++ rec /home/stefan/Desktop/lab_so/new_c_project/obj
++ set -x
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/lab_so/new_c_project/obj/*' -a -r '/home/stefan/Desktop/lab_so/new_c_project/obj/*' -a -x '/home/stefan/Desktop/lab_so/new_c_project/obj/*' ']'
++ '[' -f '/home/stefan/Desktop/lab_so/new_c_project/obj/*' -a -r '/home/stefan/Desktop/lab_so/new_c_project/obj/*' -a -x '/home/stefan/Desktop/lab_so/new_c_project/obj/*' ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/new_c_project/src -a -r /home/stefan/Desktop/lab_so/new_c_project/src -a -x /home/stefan/Desktop/lab_so/new_c_project/src ']'
++ '[' -L /home/stefan/Desktop/lab_so/new_c_project/src ']'
++ rec /home/stefan/Desktop/lab_so/new_c_project/src
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/lab_so/new_c_project/src/lmao.c -a -r /home/stefan/Desktop/lab_so/new_c_project/src/lmao.c -a -x /home/stefan/Desktop/lab_so/new_c_project/src/lmao.c ']'
++ '[' -f /home/stefan/Desktop/lab_so/new_c_project/src/lmao.c -a -r /home/stefan/Desktop/lab_so/new_c_project/src/lmao.c -a -x /home/stefan/Desktop/lab_so/new_c_project/src/lmao.c ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/lab_so/new_c_project/src/Untitled Document' -a -r '/home/stefan/Desktop/lab_so/new_c_project/src/Untitled Document' -a -x '/home/stefan/Desktop/lab_so/new_c_project/src/Untitled Document' ']'
++ '[' -f '/home/stefan/Desktop/lab_so/new_c_project/src/Untitled Document' -a -r '/home/stefan/Desktop/lab_so/new_c_project/src/Untitled Document' -a -x '/home/stefan/Desktop/lab_so/new_c_project/src/Untitled Document' ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/output.txt -a -r /home/stefan/Desktop/output.txt -a -x /home/stefan/Desktop/output.txt ']'
++ '[' -f /home/stefan/Desktop/output.txt -a -r /home/stefan/Desktop/output.txt -a -x /home/stefan/Desktop/output.txt ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare' -a -r '/home/stefan/Desktop/Sisteme de Operare' -a -x '/home/stefan/Desktop/Sisteme de Operare' ']'
++ '[' -L '/home/stefan/Desktop/Sisteme de Operare' ']'
++ rec '/home/stefan/Desktop/Sisteme de Operare'
++ set -x
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Curs' -a -r '/home/stefan/Desktop/Sisteme de Operare/Curs' -a -x '/home/stefan/Desktop/Sisteme de Operare/Curs' ']'
++ '[' -L '/home/stefan/Desktop/Sisteme de Operare/Curs' ']'
++ rec '/home/stefan/Desktop/Sisteme de Operare/Curs'
++ set -x
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2019-2020.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2019-2020.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2019-2020.zip' ']'
++ '[' -f '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2019-2020.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2019-2020.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2019-2020.zip' ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2020-2021.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2020-2021.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2020-2021.zip' ']'
++ '[' -f '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2020-2021.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2020-2021.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2020-2021.zip' ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2021-2022.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2021-2022.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2021-2022.zip' ']'
++ '[' -f '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2021-2022.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2021-2022.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Curs/curs_2021-2022.zip' ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Examen' -a -r '/home/stefan/Desktop/Sisteme de Operare/Examen' -a -x '/home/stefan/Desktop/Sisteme de Operare/Examen' ']'
++ '[' -L '/home/stefan/Desktop/Sisteme de Operare/Examen' ']'
++ rec '/home/stefan/Desktop/Sisteme de Operare/Examen'
++ set -x
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2018-2019.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2018-2019.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2018-2019.zip' ']'
++ '[' -f '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2018-2019.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2018-2019.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2018-2019.zip' ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2019-2020.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2019-2020.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2019-2020.zip' ']'
++ '[' -f '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2019-2020.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2019-2020.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2019-2020.zip' ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2020-2021.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2020-2021.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2020-2021.zip' ']'
++ '[' -f '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2020-2021.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2020-2021.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2020-2021.zip' ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2021-2022.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2021-2022.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2021-2022.zip' ']'
++ '[' -f '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2021-2022.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2021-2022.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Examen/examen_2021-2022.zip' ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Laborator' -a -r '/home/stefan/Desktop/Sisteme de Operare/Laborator' -a -x '/home/stefan/Desktop/Sisteme de Operare/Laborator' ']'
++ '[' -L '/home/stefan/Desktop/Sisteme de Operare/Laborator' ']'
++ rec '/home/stefan/Desktop/Sisteme de Operare/Laborator'
++ set -x
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Laborator/lab_2019-2020.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Laborator/lab_2019-2020.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Laborator/lab_2019-2020.zip' ']'
++ '[' -f '/home/stefan/Desktop/Sisteme de Operare/Laborator/lab_2019-2020.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Laborator/lab_2019-2020.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Laborator/lab_2019-2020.zip' ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Laborator/lab_2021-2022.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Laborator/lab_2021-2022.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Laborator/lab_2021-2022.zip' ']'
++ '[' -f '/home/stefan/Desktop/Sisteme de Operare/Laborator/lab_2021-2022.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Laborator/lab_2021-2022.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Laborator/lab_2021-2022.zip' ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/P1.2_commands1_print-ro.pdf' -a -r '/home/stefan/Desktop/Sisteme de Operare/P1.2_commands1_print-ro.pdf' -a -x '/home/stefan/Desktop/Sisteme de Operare/P1.2_commands1_print-ro.pdf' ']'
++ '[' -f '/home/stefan/Desktop/Sisteme de Operare/P1.2_commands1_print-ro.pdf' -a -r '/home/stefan/Desktop/Sisteme de Operare/P1.2_commands1_print-ro.pdf' -a -x '/home/stefan/Desktop/Sisteme de Operare/P1.2_commands1_print-ro.pdf' ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Site' -a -r '/home/stefan/Desktop/Sisteme de Operare/Site' -a -x '/home/stefan/Desktop/Sisteme de Operare/Site' ']'
++ '[' -L '/home/stefan/Desktop/Sisteme de Operare/Site' ']'
++ rec '/home/stefan/Desktop/Sisteme de Operare/Site'
++ set -x
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Site/~vidrascu.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Site/~vidrascu.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Site/~vidrascu.zip' ']'
++ '[' -f '/home/stefan/Desktop/Sisteme de Operare/Site/~vidrascu.zip' -a -r '/home/stefan/Desktop/Sisteme de Operare/Site/~vidrascu.zip' -a -x '/home/stefan/Desktop/Sisteme de Operare/Site/~vidrascu.zip' ']'
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Tutorial Instalare Linux' -a -r '/home/stefan/Desktop/Sisteme de Operare/Tutorial Instalare Linux' -a -x '/home/stefan/Desktop/Sisteme de Operare/Tutorial Instalare Linux' ']'
++ '[' -L '/home/stefan/Desktop/Sisteme de Operare/Tutorial Instalare Linux' ']'
++ rec '/home/stefan/Desktop/Sisteme de Operare/Tutorial Instalare Linux'
++ set -x
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/Sisteme de Operare/Tutorial Instalare Linux/link.txt' -a -r '/home/stefan/Desktop/Sisteme de Operare/Tutorial Instalare Linux/link.txt' -a -x '/home/stefan/Desktop/Sisteme de Operare/Tutorial Instalare Linux/link.txt' ']'
++ '[' -f '/home/stefan/Desktop/Sisteme de Operare/Tutorial Instalare Linux/link.txt' -a -r '/home/stefan/Desktop/Sisteme de Operare/Tutorial Instalare Linux/link.txt' -a -x '/home/stefan/Desktop/Sisteme de Operare/Tutorial Instalare Linux/link.txt' ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so -a -r /home/stefan/Desktop/teme_so -a -x /home/stefan/Desktop/teme_so ']'
++ '[' -L /home/stefan/Desktop/teme_so ']'
++ rec /home/stefan/Desktop/teme_so
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/1.txt -a -r /home/stefan/Desktop/teme_so/1.txt -a -x /home/stefan/Desktop/teme_so/1.txt ']'
++ '[' -f /home/stefan/Desktop/teme_so/1.txt -a -r /home/stefan/Desktop/teme_so/1.txt -a -x /home/stefan/Desktop/teme_so/1.txt ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/2.txt -a -r /home/stefan/Desktop/teme_so/2.txt -a -x /home/stefan/Desktop/teme_so/2.txt ']'
++ '[' -f /home/stefan/Desktop/teme_so/2.txt -a -r /home/stefan/Desktop/teme_so/2.txt -a -x /home/stefan/Desktop/teme_so/2.txt ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/3.txt -a -r /home/stefan/Desktop/teme_so/3.txt -a -x /home/stefan/Desktop/teme_so/3.txt ']'
++ '[' -f /home/stefan/Desktop/teme_so/3.txt -a -r /home/stefan/Desktop/teme_so/3.txt -a -x /home/stefan/Desktop/teme_so/3.txt ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/my_listing.sh -a -r /home/stefan/Desktop/teme_so/my_listing.sh -a -x /home/stefan/Desktop/teme_so/my_listing.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/my_listing.sh -a -r /home/stefan/Desktop/teme_so/my_listing.sh -a -x /home/stefan/Desktop/teme_so/my_listing.sh ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/PrintArgs.sh -a -r /home/stefan/Desktop/teme_so/PrintArgs.sh -a -x /home/stefan/Desktop/teme_so/PrintArgs.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/PrintArgs.sh -a -r /home/stefan/Desktop/teme_so/PrintArgs.sh -a -x /home/stefan/Desktop/teme_so/PrintArgs.sh ']'
++ [[ /home/stefan/Desktop/teme_so/PrintArgs.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/PrintArgs.sh
++ i=
++ '[' -z ']'
++ echo '/home/stefan/Desktop/teme_so/PrintArgs.sh has no for loops'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/pt_baza_de_date -a -r /home/stefan/Desktop/teme_so/pt_baza_de_date -a -x /home/stefan/Desktop/teme_so/pt_baza_de_date ']'
++ '[' -f /home/stefan/Desktop/teme_so/pt_baza_de_date -a -r /home/stefan/Desktop/teme_so/pt_baza_de_date -a -x /home/stefan/Desktop/teme_so/pt_baza_de_date ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/script.sh -a -r /home/stefan/Desktop/teme_so/script.sh -a -x /home/stefan/Desktop/teme_so/script.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/script.sh -a -r /home/stefan/Desktop/teme_so/script.sh -a -x /home/stefan/Desktop/teme_so/script.sh ']'
++ [[ /home/stefan/Desktop/teme_so/script.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/script.sh
++ i=
++ '[' -z ']'
++ echo '/home/stefan/Desktop/teme_so/script.sh has no for loops'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab4 -a -r /home/stefan/Desktop/teme_so/scripts_lab4 -a -x /home/stefan/Desktop/teme_so/scripts_lab4 ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab4 ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab4
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab4/FirstScript.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/FirstScript.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/FirstScript.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab4/FirstScript.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/FirstScript.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/FirstScript.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab4/FirstScript.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab4/FirstScript.sh
++ i='for parametru in $@'
++ '[' -z for parametru in '$@' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab4/FirstScript.sh has 1 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab4/FirstScript.sh
++ echo 'FirstScript.sh: start'
++ echo 'for parametru in $@'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab4/FirstScript.sh
++ echo 'FirstScript.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_1.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_1.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_1.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_1.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_1.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_1.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_1.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_1.sh
++ i='for i in `seq 1 $m`'
++ '[' -z for i in '`seq' 1 '$m`' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_1.sh has 1 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_1.sh
++ echo 'Iterative_math_1.sh: start'
++ echo 'for i in `seq 1 $m`'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_1.sh
++ echo 'Iterative_math_1.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_2.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_2.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_2.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_2.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_2.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_2.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_2.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_2.sh
++ i='for i in $*'
++ '[' -z for i in '$*' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_2.sh has 1 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_2.sh
++ echo 'Iterative_math_2.sh: start'
++ echo 'for i in $*'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab4/Iterative_math_2.sh
++ echo 'Iterative_math_2.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab4/MyExpr.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/MyExpr.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/MyExpr.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab4/MyExpr.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/MyExpr.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/MyExpr.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab4/MyExpr.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab4/MyExpr.sh
++ i=
++ '[' -z ']'
++ echo '/home/stefan/Desktop/teme_so/scripts_lab4/MyExpr.sh has no for loops'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab4/MyGccOrCat.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/MyGccOrCat.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/MyGccOrCat.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab4/MyGccOrCat.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/MyGccOrCat.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/MyGccOrCat.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab4/MyGccOrCat.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab4/MyGccOrCat.sh
++ i='for f in $(ls -A $1)'
++ '[' -z for f in '$(ls' -A '$1)' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab4/MyGccOrCat.sh has 1 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab4/MyGccOrCat.sh
++ echo 'MyGccOrCat.sh: start'
++ echo 'for f in $(ls -A $1)'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab4/MyGccOrCat.sh
++ echo 'MyGccOrCat.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab4/ok1.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/ok1.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/ok1.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab4/ok1.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/ok1.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/ok1.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab4/ok1.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab4/ok1.sh
++ i='        for i in '\''seq 3
+for i in $@'
++ '[' -z for i in ''\''seq' 3 for i in '$@' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab4/ok1.sh has 2 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab4/ok1.sh
++ echo 'ok1.sh: start'
++ echo '        for i in '\''seq 3
+for i in $@'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab4/ok1.sh
++ echo 'ok1.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab4/ok2.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/ok2.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/ok2.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab4/ok2.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/ok2.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/ok2.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab4/ok2.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab4/ok2.sh
++ i=
++ '[' -z ']'
++ echo '/home/stefan/Desktop/teme_so/scripts_lab4/ok2.sh has no for loops'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab4/Recursive_math_1.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/Recursive_math_1.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/Recursive_math_1.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab4/Recursive_math_1.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab4/Recursive_math_1.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab4/Recursive_math_1.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab4/Recursive_math_1.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab4/Recursive_math_1.sh
++ i=
++ '[' -z ']'
++ echo '/home/stefan/Desktop/teme_so/scripts_lab4/Recursive_math_1.sh has no for loops'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab5 -a -r /home/stefan/Desktop/teme_so/scripts_lab5 -a -x /home/stefan/Desktop/teme_so/scripts_lab5 ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab5 ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab5
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab5/Call2Find.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/Call2Find.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/Call2Find.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab5/Call2Find.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/Call2Find.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/Call2Find.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab5/Call2Find.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab5/Call2Find.sh
++ i='for script in $(find $path -type f -name "*.sh")'
++ '[' -z for script in '$(find' '$path' -type f -name '"*.sh")' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab5/Call2Find.sh has 1 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/Call2Find.sh
++ echo 'Call2Find.sh: start'
++ echo 'for script in $(find $path -type f -name "*.sh")'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/Call2Find.sh
++ echo 'Call2Find.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v1.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v1.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v1.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v1.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v1.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v1.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v1.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v1.sh
++ i='for source in $path/*.cpp'
++ '[' -z for source in '$path/*.cpp' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v1.sh has 1 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v1.sh
++ echo 'MyG++_v1.sh: start'
++ echo 'for source in $path/*.cpp'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v1.sh
++ echo 'MyG++_v1.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v2.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v2.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v2.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v2.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v2.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v2.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v2.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v2.sh
++ i='for source in $(find $path -maxdepth 0 -name "*.cpp")'
++ '[' -z for source in '$(find' '$path' -maxdepth 0 -name '"*.cpp")' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v2.sh has 1 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v2.sh
++ echo 'MyG++_v2.sh: start'
++ echo 'for source in $(find $path -maxdepth 0 -name "*.cpp")'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v2.sh
++ echo 'MyG++_v2.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v3.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v3.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v3.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v3.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v3.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v3.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v3.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v3.sh
++ i='for source in $(ls -A $path/*.cpp)'
++ '[' -z for source in '$(ls' -A '$path/*.cpp)' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v3.sh has 1 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v3.sh
++ echo 'MyG++_v3.sh: start'
++ echo 'for source in $(ls -A $path/*.cpp)'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/MyG++_v3.sh
++ echo 'MyG++_v3.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab5/ok.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/ok.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/ok.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab5/ok.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/ok.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/ok.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab5/ok.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab5/ok.sh
++ i='for fis in $(ls -A $dirname)'
++ '[' -z for fis in '$(ls' -A '$dirname)' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab5/ok.sh has 1 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/ok.sh
++ echo 'ok.sh: start'
++ echo 'for fis in $(ls -A $dirname)'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/ok.sh
++ echo 'ok.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab5/Run_SPMD_programs.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/Run_SPMD_programs.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/Run_SPMD_programs.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab5/Run_SPMD_programs.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/Run_SPMD_programs.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/Run_SPMD_programs.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab5/Run_SPMD_programs.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab5/Run_SPMD_programs.sh
++ i='for i in $(seq 1 $n)
+for i in $(seq 1 $n)'
++ '[' -z for i in '$(seq' 1 '$n)' for i in '$(seq' 1 '$n)' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab5/Run_SPMD_programs.sh has 2 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/Run_SPMD_programs.sh
++ echo 'Run_SPMD_programs.sh: start'
++ echo 'for i in $(seq 1 $n)
+for i in $(seq 1 $n)'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/Run_SPMD_programs.sh
++ echo 'Run_SPMD_programs.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#1.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#1.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#1.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#1.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#1.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#1.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#1.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#1.sh
++ i='for file in $(file $(find . -type f) | grep "Bourne-Again shell script" | cut -d ":" -f 1)'
++ '[' -z for file in '$(file' '$(find' . -type 'f)' '|' grep '"Bourne-Again' shell 'script"' '|' cut -d '":"' -f '1)' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#1.sh has 1 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#1.sh
++ echo 'set#2_#1.sh: start'
++ echo 'for file in $(file $(find . -type f) | grep "Bourne-Again shell script" | cut -d ":" -f 1)'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#1.sh
++ echo 'set#2_#1.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#2.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#2.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#2.sh ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#2.sh -a -r /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#2.sh -a -x /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#2.sh ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#2.sh =~ ^.*\.sh ]]
+++ grep -P '^(.* )?for .*$' /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#2.sh
++ i='for file in $(ls -A $dirname)'
++ '[' -z for file in '$(ls' -A '$dirname)' ']'
+tema_a11.sh: line 27: [: too many arguments
+++ wc -l
++ echo 'The file /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#2.sh has 1 for loops'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#2.sh
++ echo 'set#2_#2.sh: start'
++ echo 'for file in $(ls -A $dirname)'
+++ basename /home/stefan/Desktop/teme_so/scripts_lab5/set#2_#2.sh
++ echo 'set#2_#2.sh: end'
++ echo ''
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6 -a -r /home/stefan/Desktop/teme_so/scripts_lab6 -a -x /home/stefan/Desktop/teme_so/scripts_lab6 ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6 ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics -a -r /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics -a -x /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/bin -a -r /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/bin -a -x /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/bin ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/bin ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/bin
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/bin/main -a -r /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/bin/main -a -x /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/bin/main ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/bin/main -a -r /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/bin/main -a -x /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/bin/main ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/bin/main =~ ^.*\.sh ]]
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/Makefile -a -r /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/Makefile -a -x /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/Makefile ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/Makefile -a -r /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/Makefile -a -x /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/Makefile ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/obj -a -r /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/obj -a -x /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/obj ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/obj ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/obj
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/obj/AsciiStatistics.o -a -r /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/obj/AsciiStatistics.o -a -x /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/obj/AsciiStatistics.o ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/obj/AsciiStatistics.o -a -r /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/obj/AsciiStatistics.o -a -x /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/obj/AsciiStatistics.o ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/src -a -r /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/src -a -x /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/src ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/src ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/src
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/src/AsciiStatistics.c -a -r /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/src/AsciiStatistics.c -a -x /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/src/AsciiStatistics.c ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/src/AsciiStatistics.c -a -r /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/src/AsciiStatistics.c -a -x /home/stefan/Desktop/teme_so/scripts_lab6/AsciiStatistics/src/AsciiStatistics.c ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld -a -r /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld -a -x /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/bin -a -r /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/bin -a -x /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/bin ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/bin ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/bin
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/bin/main -a -r /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/bin/main -a -x /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/bin/main ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/bin/main -a -r /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/bin/main -a -x /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/bin/main ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/bin/main =~ ^.*\.sh ]]
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/Makefile -a -r /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/Makefile -a -x /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/Makefile ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/Makefile -a -r /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/Makefile -a -x /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/Makefile ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/obj -a -r /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/obj -a -x /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/obj ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/obj ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/obj
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/obj/FirstProgram-HelloWorld.o -a -r /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/obj/FirstProgram-HelloWorld.o -a -x /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/obj/FirstProgram-HelloWorld.o ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/obj/FirstProgram-HelloWorld.o -a -r /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/obj/FirstProgram-HelloWorld.o -a -x /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/obj/FirstProgram-HelloWorld.o ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/src -a -r /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/src -a -x /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/src ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/src ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/src
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/src/FirstProgram-HelloWorld.c -a -r /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/src/FirstProgram-HelloWorld.c -a -x /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/src/FirstProgram-HelloWorld.c ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/src/FirstProgram-HelloWorld.c -a -r /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/src/FirstProgram-HelloWorld.c -a -x /home/stefan/Desktop/teme_so/scripts_lab6/FirstProgram-HelloWorld/src/FirstProgram-HelloWorld.c ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyFind -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyFind -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyFind ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/MyFind ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/MyFind
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/bin -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/bin -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/bin ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/bin ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/bin
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/bin/main -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/bin/main -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/bin/main ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/bin/main -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/bin/main -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/bin/main ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/bin/main =~ ^.*\.sh ]]
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/Makefile -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/Makefile -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/Makefile ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/Makefile -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/Makefile -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/Makefile ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/obj -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/obj -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/obj ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/obj ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/obj
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/obj/MyFind.o -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/obj/MyFind.o -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/obj/MyFind.o ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/obj/MyFind.o -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/obj/MyFind.o -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/obj/MyFind.o ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/src -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/src -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/src ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/src ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/src
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/src/MyFind.c -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/src/MyFind.c -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/src/MyFind.c ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/src/MyFind.c -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/src/MyFind.c -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyFind/src/MyFind.c ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyHead -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyHead -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyHead ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/MyHead ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/MyHead
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/bin -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/bin -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/bin ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/bin ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/bin
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/bin/main -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/bin/main -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/bin/main ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/bin/main -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/bin/main -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/bin/main ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/bin/main =~ ^.*\.sh ]]
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/Makefile -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/Makefile -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/Makefile ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/Makefile -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/Makefile -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/Makefile ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/obj -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/obj -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/obj ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/obj ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/obj
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/obj/MyHead.o -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/obj/MyHead.o -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/obj/MyHead.o ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/obj/MyHead.o -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/obj/MyHead.o -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/obj/MyHead.o ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/src -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/src -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/src ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/src ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/src
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/src/MyHead.c -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/src/MyHead.c -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/src/MyHead.c ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/src/MyHead.c -a -r /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/src/MyHead.c -a -x /home/stefan/Desktop/teme_so/scripts_lab6/MyHead/src/MyHead.c ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/a -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/a -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/a ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/a -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/a -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/a ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/bin -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/bin -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/bin ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/bin ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/bin
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/bin/main -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/bin/main -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/bin/main ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/bin/main -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/bin/main -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/bin/main ']'
++ [[ /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/bin/main =~ ^.*\.sh ]]
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/Makefile -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/Makefile -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/Makefile ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/Makefile -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/Makefile -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/Makefile ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/obj -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/obj -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/obj ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/obj ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/obj
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/obj/The_Filter_MyTr.o -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/obj/The_Filter_MyTr.o -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/obj/The_Filter_MyTr.o ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/obj/The_Filter_MyTr.o -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/obj/The_Filter_MyTr.o -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/obj/The_Filter_MyTr.o ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/src -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/src -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/src ']'
++ '[' -L /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/src ']'
++ rec /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/src
++ set -x
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/src/The_Filter_MyTr.c -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/src/The_Filter_MyTr.c -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/src/The_Filter_MyTr.c ']'
++ '[' -f /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/src/The_Filter_MyTr.c -a -r /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/src/The_Filter_MyTr.c -a -x /home/stefan/Desktop/teme_so/scripts_lab6/The_Filter_MyTr/src/The_Filter_MyTr.c ']'
++ for name in "$1"/*
++ '[' -d /home/stefan/Desktop/visual_input -a -r /home/stefan/Desktop/visual_input -a -x /home/stefan/Desktop/visual_input ']'
++ '[' -L /home/stefan/Desktop/visual_input ']'
++ rec /home/stefan/Desktop/visual_input
++ set -x
++ for name in "$1"/*
++ '[' -d '/home/stefan/Desktop/visual_input/*' -a -r '/home/stefan/Desktop/visual_input/*' -a -x '/home/stefan/Desktop/visual_input/*' ']'
++ '[' -f '/home/stefan/Desktop/visual_input/*' -a -r '/home/stefan/Desktop/visual_input/*' -a -x '/home/stefan/Desktop/visual_input/*' ']'

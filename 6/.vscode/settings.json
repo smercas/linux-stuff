@@ -1,0 +1,21 @@
+{
+  "files.associations": {
+    "stdio.h": "c",
+    "limits.h": "c",
+    "unistd.h": "c",
+    "stdint.h": "c",
+    "stat.h": "c",
+    "print_args.h": "c",
+    "stdint-intn.h": "c",
+    "types.h": "c",
+    "is_regular_file.h": "c",
+    "recieve_input_file.h": "c",
+    "mycode.h": "c",
+    "libgen.h": "c",
+    "recieve_output_file.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "enabled",
+  "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
+    "clang-diagnostic-pointer-integer-compare"
+  ]
+}

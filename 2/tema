@@ -1,0 +1,21 @@
+a:
+1:
+sort /etc/group -n -r -t : -k 3
+2:
+# last 2 commands are meant to shot the oldest file found comapred to the time 7 days ago
+find / -type f -mtime -7 -printf '%M %t %p\n' | tr -s ' ' | sort -n -r -t ' ' -k 4 ; date -d '7 days ago'
+3:
+find . -executable -printf '%k %a %p\n'
+b:
+1:
+find . \( -type d -o -type f \) -perm -g=rx -printf '%M %p\n' | sort
+2:
+find . \( -name '*\.c' -o -name '\.cpp' -o -name '\.h' \) -printf '%s %t %p\n'
+3:
+find ~ -name '*\.cpp' -size -5k -exec g++ {} \; 2> errors.txt
+4:
+find / \( -name '*\.htm' -o -name '*\.html' -o -name '*\.php' -o -name '*\.css' \) -printf '%k %t %p\n'
+5:
+find ~ \( -name '*~' -o -name -'*\.bak' \) -exec rm {} \;
+6:
+find / -samefile ~/d1/15lines.txt # add '2> /dev/null' without the quotes to ignore all the permission denied messages (avaliable for most Scommands)

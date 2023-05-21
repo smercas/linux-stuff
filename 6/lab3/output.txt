@@ -1,0 +1,12 @@
+Name: /home/stefan/Desktop/diff_calculate
+Type: directory
+Number of hard links: 2
+Size: 4096
+Size allocated on the disk(in 512b blocks): 8
+Permissions, in octal form: 775
+Permissions, in a more readable form: rwxrwxr-x
+Uid: 1000
+Username: stefan
+Gid: 1000
+Group Name: stefan
+

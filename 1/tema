@@ -1,0 +1,10 @@
+3:
+cut /etc/passwd -d : -f 1,4 --output-delimiter "-"
+4:
+grep :x:[0123456789]*:0: /etc/passwd
+grep ^[^:]*:[^:]*:[^:]*:0: /etc/passwd #safer
+awk -F : '$4==0 {print}' /etc/passwd #safer AND easier
+awk -F : '$4 ~ /^[0-9]{5}$/' /etc/passwd #more examples of awk (why even use grep lmao)
+                                         #{print} is optional since that's the default behaviour of awk
+5:
+stat /etc/passwd -c %h

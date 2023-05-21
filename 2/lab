@@ -1,0 +1,39 @@
+1:
+id stefan
+groups stefan
+2:
+users
+who
+w
+finger
+last
+last so
+3:
+stat d1/15lines.txt #shows more info than the 'file' command
+chmod u-r d1/15lines.txt #removes reading privileges for the owner of the file
+chmod g+w d1/15lines.txt #adds writing privileges to the group of the file
+chmod go=rx d1/15lines.txt #sets the file privileges in such a way that only the group of the file and others will be able to read and execute it
+chmod a=rwx d1/15lines.txt #all privileges for everyone
+sudo chwon root d1/15lines.txt #changes the owner of the file to root
+sudo chwon :sudo d1/15lines.txt #changes the group of the file to sudo
+sudo chwon root:sudo d1/15lines.txt #changes both at the same time
+sudo chgrp sambashare d1/15lines.txt #changes the group of the file to sudo
+4:
+sort -r -o output.txt /etc/passwd
+sort -r /etc/passwd > output.txt
+5:
+sort -n -t : -k 3 /etc/passwd
+6:
+wc -l /etc/passwd /etc/group
+7:
+find . -printf '%P %M\n'
+8:
+find . -regex '^.*/\(a[^/]*\|[^./]*a\|.*a\.[^./]*\)$' -printf '%k %t %p\n'
+find . \( -name 'a*' -o -regex '.*a\.[a-zA-Z0-9]*' -o -regex '.*/[^.]*a' \) -printf '%k %t %p\n' #i haven't found a difference between these two commands but i like the second one more
+9:
+ps
+pstree
+top
+10:
+------
+# good luck with this lmao loser

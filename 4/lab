@@ -1,0 +1,220 @@
+# variable stuff (will be a const char array):
+#       var=expression
+#       $var == expression
+#       set (don't ever use this please)
+#       unset var ("destroys" var)
+#       ${var}abc == expressionabc
+#       $(!var)abc == $expressionabc
+#       ${var:-str}
+#           if var is defined, then == var
+#           if var is not defined, but str is, then == str
+#           if both var and str are not defined, then == 
+#       ${var:=str}
+#           if var is defined, then == var
+#           if var is not defined, but str is, then var will be set to str and == var
+#           if both var and str are not defined, then ==
+#       ${var:?str}
+#           if var is defined, then == var
+#           if var is not defined, but str is, then == bash: var: str
+#           if both var and str are not defined, then == bash: var: parameter null or not set
+#       ${var:+str}
+#           if var is defined, then == str
+#           if var is not defined, then == 
+#       ${#var} == strlen($var)
+#       ${var:a} == var[a]var[a+1]...
+#       ${var:a:b} == var[a]var[a+1]...var[a+b-1]
+#
+#       ${var#str} == var without the smallest pattern in str at the start
+#       ${var##str} == var without the biggest pattern in str at the start
+#       ${var%str} == var without the smallest pattern in str at the end
+#       ${var%%str} == var without the biggest pattern in str at the end
+#
+#       dirname $file == the path of the folder where $file is located
+#       basename $file == the name of the file without the path
+#       $(command) or `command` == executes the command in a subshell
+#       $((equation)) or ((equation)) == arithmetic result of equation
+#       $(seq 10 3 25) == "10\n13\n16\n19\n22\n25"
+
+
+
+# $1, $2, $3, ..., $9, ${10}, ${11}, ... - curent process' positional parameters (arguments of the script)
+# $0 - process name
+# $# - number of positional parameters
+# $*, $@ - positional parameters list
+#       "$*" - produces a single word
+#       "$@" - produces a word for each positional parameter
+# $$ - process id
+# $? - exit status of the last foreground executed pipeline
+# $! - the PID of the last background executed process
+# $- - attributes with which the shell process has been launched
+# there are some other variables such as $HOME that have some niche uses, for example:
+#       $HOME - like ~ but can be used, for example, in a [[ ]] test:
+#               if [[ "$path" =~ ^$HOME/.*$ ]] -this will not work properly if $HOME was replaced with ~
+
+
+
+# read var1 var2 ... (reads into variables, sherlock) (can do 'read -p "read_message" var')
+# readonly var1 var2 ... (basically the same thing but readonly)
+# export var1 var2 ... (exports to child/inheriting/whatev processes)
+# shift n - shifts the positional parameters to the left ($1 gets the value of $2,
+#           $2 gets the value of $3 and so on) and updates $#, $*, $@ accordingly (shift 1 == shift)
+# eval parameters - straight up evaluates parameters (useful for commands that already have '' AND "")
+# set -n - reads commands without executing them (useful for noticing any sintactical errors)
+# set -x - shows the result of every line's interpretation before executing it
+# set +x - like a unset -x if that makes any sense
+
+
+
+# let - for arithmetical expressions
+# examples:
+#       let v=v-1           #decrements v
+#       let v+=10           #adds 10 to v
+#       let "v -= 2 ** 3"   #subtracts 2^3 to v
+# expr - outputs the result of a expression (who would've thought?)
+# examples:
+#       expr 1 + 2 \* 3     #prints 7 in the terminal
+#       v=`expr $v + 1'     #executes "expr $v + 1" in a subshell and prints its result (v incremented) into v
+#       v=$(expr $v + 10)   #executes "expr $v - 10" in a  subshell and prints its result (10) into v
+# declare -i var allows you to work with var like it-s an integer (nu need to use let every time)
+# examples:
+#       var=5*4
+#       var=2**3
+# local var is like declare but for local variables
+# local -n var makes var into a name reference, it can be used to avoid calling subshels
+#       imagine it being something like a reference parameter in a c/c++ function
+# example:
+#       function lol() {
+#           local -n var=$1 #here you only need -n, not every attribute a got(also it won't work if you pass in the attributes of a)
+#           var=output
+#       }
+#       a=to_be_overwritten
+#       echo $a
+#       lol a
+#       echo $a
+# declare -a arr allows you to use "arr" as an array (the i-th element is arr[i])
+#       to get all the elements of an aray use ${arr[@]}
+# declare -A assoc allows you to use "assoc" as an associative array(unordered_map)
+#       to iterate through each element you need to use:
+declare -A assoc=([abc]="123" [def]="456")
+for i in "${!assoc[@]}"     #${!assoc[@]} wil be "a b"
+do 
+    echo "${assoc[$i]}"
+done
+# bc - used for floating point arithmetic AND big ints
+# examples:
+#       echo 3^2 | bc   #prints 9
+#       echo 3/2 | bc   #prints 1
+#       echo 3/2 | bc -l    #prints 1.50000000000000000000
+#       echo "scale=4; 3/2" | bc    #prints 1.5000
+#       echo "scale=10; 4*a(1)" | bc -l #prints 3.1415926532
+#       echo "scale=5; sqrt(2)" | bc    #prints 1.41421
+#       echo "scale=2; v = 1; v += 3/2; v+10" | bc  #prints 12.50
+# can also use bc like this:
+#       export BC_LINE_LENGTH=10000 #does what you think it does
+#       x=$(bc <<< "10^10000")
+# can also do arithmetic expansion usint ((...)) and $((...))
+# examples:
+#       a=$(( 4 + 5 ))  #a will be 9
+#       (( a += 10 ))   #a is incremented by 10
+#       (( b = a<45?11:22 ))    #if a < 45, b will be 11, else it'll be 22
+#       echo $((0xFFFF))    #prints 65535
+#       echo $((4#1203))    #prints 99
+
+
+
+# test condition - will test the condition (can be written as [ condition ] or, got forbid,
+#                                                            [[ condition ]] if you're willing to use regex stuff on the second string)
+# relational string operators:
+#       test -z string              #true if "string" has the length of 0
+#       test -n string              #true if "string" is not a null array
+#       test string_1 = string_2    #true if "string_1" and "string_2" are equal
+#       test string_1 != string_2   #true if "string_1" and "string_2" are not equal
+#       test string_1 > string_2    #true if "string_1" is lexicographically greater "string_2"
+#       test string_1 < string_2    #true if "string_1" is lexicographically lower "string_2"
+# relational number operators:
+#       test val_1 -eq val_2        #true if "val_1" and "val_2" are equal
+#       test val_1 -ne val_2        #true if "val_1" and "val_2" are not equal
+#       test val_1 -gt val_2        #true if "val_1" is greater than "val_2"
+#       test val_1 -ge val_2        #true if "val_1" is greater than or equal to "val_2"
+#       test val_1 -lt val_2        #true if "val_1" is lower than "val_2"
+#       test val_1 -le val_2        #true if "val_1" is lower than or equal to  "val_2"
+# file tests:
+#       test -e file            #true if "file" exists
+#       test -d file            #true if "file" is a directory
+#       test -f file            #true if "file" is a normal file
+#       test -p file            #true if "file" is a pipe file (fifo)
+#       test -b/-c file         #true if "file" is organised in blocks(binary)/characters
+#       test -r/-w/-x file      #true if "file" can be read/written to/executed
+#       test -s file            #true if "file" has anything written in it
+#       test -L file            #true if "file" is a symbolic link(normal file or directory)
+# negations, conjunctions and disjunctions:
+#       test !condition                     #true if "condition" is false
+#       test condition_1 -a condition_2     #true if both "condition?1" and "condition_2" are true
+#       test condition_1 -o condition_2     #true if at least one of "condition?1" or "condition_2" is true
+#       test condition_1 && test condition_2        #like test condition_1 -a condition_2 but with lazy evaluation
+#       test condition_1 || test condition_2        #like test condition_1 -a condition_2 but with lasy evaluation
+
+# if you want to read path names with spaces use whatever command prints paths one line at a time and append |while IFS='' read -r $where_you_want_to_read_paths
+# examples:
+ls -A -1 / | while IFS='' read -r f
+do
+    use f on whatever
+done
+
+#i'm stupid
+#just use "$path"/*
+for name in "$path"/*
+do
+    not funny didn't laugh
+done
+
+# if
+if command_list_1
+then
+    command_list_2
+elif command_list_3
+    command_list_4
+else
+    command_list_5
+fi
+
+# while loop
+while command_list_1
+do
+    command_list_2
+done
+
+# until while
+until command_list_1
+do
+    command_list_2
+done
+
+# for_each thingy
+for var in word_list
+do
+    command_list
+done
+
+#for loop
+for (( expr1; expr2; expr3 ))
+do
+    command_list
+done
+
+#select loop - basically used as a automatic menu (maybe avoid using this)
+select car in word_list
+do
+    command_list
+done
+
+# break n - exits n do-done loops and continues on the step after the last do-done loop that was broken
+# continue n - restarts the current do-done loop n times
+# exit code - exits with code "code" (Object object much)
+# wait pid - waits for the process with the pid of "pid" to finish its execution (halting script execution until then)
+# exec command - straight up does command instead of resuming execution of the current script
+#               (execution of the current script will never resume)
+
+function_name() {
+    command_list
+}
