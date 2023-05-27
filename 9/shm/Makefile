@@ -12,23 +12,20 @@ IFLAGS = -I$(CUTILSPATH)/src
 LFLAGS = -L$(CUTILSPATH)/lib
 WLFLAGS = -Wl,-rpath=$(CUTILSPATH)/lib
 
-MASTER = master_wc-bin
-SLAVE = slave_wc-bin
+MASTER = master
+SLAVE = slave
 
 SRC = src
-SOURCES = $(shell find $(SRC) -name "*.c")
 MASTERSRC = $(SRC)/$(MASTER).c
 SLAVESRC = $(SRC)/$(SLAVE).c
 
 OBJ = obj
-OBJECTS = $(patsubst $(SRC)/%.c, $(OBJ)/%.o, $(SOURCES))
 MASTEROBJ = $(OBJ)/$(MASTER).o
 SLAVEOBJ = $(OBJ)/$(SLAVE).o
 
 BIN = bin
-MAIN = $(BIN)/main
-MASTERMAIN = $(BIN)/master
-SLAVEMAIN = $(BIN)/slave
+MASTERMAIN = $(BIN)/$(MASTER)
+SLAVEMAIN = $(BIN)/$(SLAVE)
 
 TESTFRAMEWORK = -lcriterion
 TESTUSEDLIBRARIES = $(USEDLIBRARIES) $(TESTFRAMEWORK)
@@ -41,28 +38,23 @@ TESTSOURCES = $(shell find $(TESTSRC) -name "*.c")
 TESTBIN = $(TEST)/bin
 TESTBINARIES = $(patsubst $(TESTSRC)/%.c, $(TESTBIN)/%, $(TESTSOURCES))
 
-#all: $(MAIN)
 all: $(MASTERMAIN) $(SLAVEMAIN)
 
 release: CFLAGS = -Wall -O3 -DNDEBUG
 release: clean
-#release: $(MAIN)
-release: $(MASTER) $(SLAVE)
+release: $(MASTERMAIN) $(SLAVEMAIN)
 
-$(MASTERMAIN): $(MASTEROBJ) $(BIN)
-	mkdir -p $(dir $@) ; $(CC) $(CFLAGS) $(LFLAGS) $(WLFLAGS) $(MASTEROBJ) -o $@ $(USEDLIBRARIES)
+$(MASTERMAIN): $(MASTEROBJ) | $(BIN)
+	$(CC) $(CFLAGS) $(LFLAGS) $(WLFLAGS) $< -o $@ $(USEDLIBRARIES)
 
-$(SLAVEMAIN): $(SLAVEOBJ) $(BIN)
-	mkdir -p $(dir $@) ; $(CC) $(CFLAGS) $(LFLAGS) $(WLFLAGS) $(SLAVEOBJ) -o $@ $(USEDLIBRARIES)
+$(SLAVEMAIN): $(SLAVEOBJ) | $(BIN)
+	$(CC) $(CFLAGS) $(LFLAGS) $(WLFLAGS) $< -o $@ $(USEDLIBRARIES)
 
-$(MAIN): $(OBJECTS) $(BIN)
-	mkdir -p $(dir $@) ; $(CC) $(CFLAGS) $(LFLAGS) $(WLFLAGS) $(OBJECTS) -o $@ $(USEDLIBRARIES)
+$(MASTEROBJ): $(MASTERSRC) | $(OBJ)
+	$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@ $(USEDLIBRARIES)
 
-$(OBJ)/%.o: $(SRC)/%.c $(SRC)/%.h
-	mkdir -p $(dir $@) ; $(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@ $(USEDLIBRARIES)
-
-$(OBJ)/%.o: $(SRC)/%.c
-	mkdir -p $(dir $@) ; $(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@ $(USEDLIBRARIES)
+$(SLAVEOBJ): $(SLAVESRC) | $(OBJ)
+	$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@ $(USEDLIBRARIES)
 
 $(OBJ):
 	mkdir $@
@@ -71,7 +63,7 @@ $(BIN):
 	mkdir $@
 
 $(TESTBIN)/%: $(TESTSRC)/%.c $(MAIN)
-	mkdir -p $(dir $@) ; $(CC) $(CFLAGS) $^ -o $@ $(TESTUSEDLIBRARIES)
+	mkdir -p $(dir $@) ; $(CC) $(CFLAGS) $(IFLAGS) $(LFLAGS) $(WLFLAGS) $^ -o $@ $(TESTUSEDLIBRARIES)
 
 $(TEST):
 	mkdir $@
@@ -87,4 +79,3 @@ runtest: $(BIN) $(TESTBIN) $(TESTBINARIES)
 
 clean:
 	$(RM) -r $(BIN)/* $(OBJ)/* $(TESTBIN)/*
-	

@@ -70,4 +70,3 @@ runtest: $(BIN) $(TESTBIN) $(TESTBINARIES)
 
 clean:
 	$(RM) -r $(BIN)/* $(OBJ)/* $(TESTBIN)/*
-	
