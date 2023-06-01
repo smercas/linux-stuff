@@ -10,7 +10,7 @@
 #include <stdint.h>
 
 int32_t main(int32_t argc, char** argv) {
-    int32_t   fd_read, fd_write, fd_readwrite, code_read;
+    int32_t fd_read, fd_write, fd_readwrite, code_read;
     char* fifo_name;
     char message[4096];
     if (argc - 1 != 2) { fprintf(stderr,"usage: fifo_file_name info\n"); return -1; }
